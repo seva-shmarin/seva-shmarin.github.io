@@ -1,0 +1,6 @@
+User-agent: *
+Host: https://seva-shmarin.github.io
+Sitemap: https://seva-shmarin.github.io/sitemap.xml
+
+User-agent: Yandex
+Disallow: /*/amp
