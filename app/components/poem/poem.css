@@ -1,0 +1,18 @@
+.poem {
+	display: table;
+	flex-grow: 1;
+	margin-inline: auto;
+}
+
+.poem p {
+	padding-left: 2rem;
+	font-size: 1.125rem;
+	font-family: var(--font-serif);
+	text-indent: -2rem;
+}
+
+@media print {
+	.poem {
+		page-break-after: avoid;
+	}
+}
