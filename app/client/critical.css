@@ -1,0 +1,12 @@
+@import url("css/fonts.css");
+@import url("css/global.css");
+@import url("css/helpers.css");
+
+@import url("../components/author/author.css");
+@import url("../components/copyright/copyright.css");
+@import url("../components/footer/footer.css");
+@import url("../components/header/header.css");
+@import url("../components/layout/layout.css");
+@import url("../components/nav-ring/nav-ring.css");
+@import url("../components/poem/poem.css");
+@import url("../components/toc/toc.css");

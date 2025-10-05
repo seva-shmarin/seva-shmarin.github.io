@@ -1,0 +1,17 @@
+.copyright {
+	margin: 4.5rem 0 0;
+	font-size: 0.75rem;
+	text-align: center;
+}
+
+.copyright a {
+	display: inline-block;
+	vertical-align: baseline;
+	color: var(--color-main);
+}
+
+@media print {
+	.copyright {
+		page-break-before: avoid;
+	}
+}
