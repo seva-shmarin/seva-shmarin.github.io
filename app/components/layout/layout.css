@@ -1,0 +1,48 @@
+body {
+	min-width: 320px;
+	height: 100%;
+	margin: 0;
+	line-height: 1.5;
+	font-family: var(--font-sans-serif);
+	font-feature-settings:
+		"tnum" on,
+		"lnum" on;
+	text-rendering: optimizeLegibility;
+	color: var(--color-text);
+	-webkit-tap-highlight-color: transparent;
+	overflow: hidden scroll;
+	overflow-anchor: none;
+}
+
+main {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	max-width: 928px;
+	min-height: 100%;
+	margin-inline: auto;
+	padding: 6rem 1.5rem 4.5rem;
+	background-color: var(--color-white);
+}
+
+@media (min-width: 480px) {
+	main {
+		padding: 6rem 3rem;
+	}
+}
+
+@media (min-width: 768px) {
+	main {
+		padding: 6rem;
+		box-shadow:
+			0 0 2px #0000001f,
+			0 2px 4px #0000003d;
+	}
+}
+
+@media print {
+	main {
+		padding: 0;
+		box-shadow: none;
+	}
+}

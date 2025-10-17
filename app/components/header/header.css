@@ -1,0 +1,47 @@
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1;
+	color: var(--color-white);
+	background-image: linear-gradient(
+		to right,
+		var(--color-main) 0,
+		var(--color-main-semitransparent) 40%,
+		var(--color-main-semitransparent) 60%,
+		var(--color-main) 100%
+	);
+	box-shadow: 0 2px 10px #00000080;
+	user-select: none;
+}
+
+header a {
+	--icon-size: 2.5rem;
+	display: table;
+	padding: 0.25rem 0.5rem;
+}
+
+header a::before {
+	content: "";
+	display: block;
+	background-color: currentColor;
+	width: var(--icon-size, 1.5rem);
+	height: var(--icon-size, 1.5rem);
+	mask: var(--icon-toc) no-repeat center / 100%;
+}
+
+@media (hover: hover) {
+	header a[href]:active {
+		background-color: transparent;
+		box-shadow:
+			inset -2px 2px #0000004d,
+			-1px 1px 1px #ffffff80;
+	}
+}
+
+@media print {
+	header {
+		display: none;
+	}
+}
